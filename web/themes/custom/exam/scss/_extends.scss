@@ -1,0 +1,74 @@
+@import "variables";
+
+%block-title {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 43%;
+    text-decoration: line-through;
+    width: 43.04%;
+    height: 2px;
+    background: $gray;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+
+%field-link {
+  a {
+    padding: 10px;
+    background: $dark-blue;
+    color: white;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+%form-background {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: -50vw;
+    width: 200vw;
+    height: 100%;
+    background-image: url("../images/back.png");
+    z-index: -10;
+  }
+}
+
+%site-branding-group {
+  width: 240px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $dark-blue;
+  .navbar-brand {
+    color: $blue;
+    text-align: center;
+    padding: 0;
+    font-size: 28px;
+    float: none;
+    height: initial;
+    line-height: initial;
+  }
+  .navbar-text {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+  }
+}

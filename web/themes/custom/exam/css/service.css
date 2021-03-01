@@ -1,0 +1,44 @@
+#block-views-block-services-block-1 .block-title {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+#block-views-block-services-block-1 .block-title:before, #block-views-block-services-block-1 .block-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 43%;
+  text-decoration: line-through;
+  width: 43.04%;
+  height: 2px;
+  background: #ccc;
+}
+#block-views-block-services-block-1 .block-title:before {
+  left: 0;
+}
+#block-views-block-services-block-1 .block-title:after {
+  right: 0;
+}
+
+#block-views-block-services-block-1 .view-block-services .views-row .services-item .field--name-body {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+#block-views-block-services-block-1 .view-block-services .views-row .services-item .field--name-node-link {
+  background: #6e9bca;
+}
+#block-views-block-services-block-1 .view-block-services .views-row .services-item .field--name-node-link a {
+  width: 99px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#block-views-block-services-block-1 .view-block-services .views-row .services-item .field--name-node-link a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=service.css.map */

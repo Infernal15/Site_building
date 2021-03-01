@@ -1,0 +1,33 @@
+@import "variables";
+@import "extends";
+
+#block-views-block-services-block-1 {
+  .block-title {
+    @extend %block-title;
+  }
+  .view-block-services {
+    .views-row {
+      .services-item {
+        .field--name-body {
+          text-align: center;
+          color: $gray;
+          margin-bottom: 25px;
+        }
+        .field--name-node-link {
+          background: $blue;
+          a {
+            width: 99px;
+            height: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "variables";
+
+.block-content--view-mode-full {
+  margin-top: 100px;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .field--name-block-description {
+      font-size: 25px;
+      color: $dark-blue;
+    }
+    .field--name-body {
+      font-size: 16px;
+      color: $gray;
+    }
+    & > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 141px;
+      height: 30px;
+      color: white;
+      background: $blue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &:before, &:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+  }
+  &:before {
+    background: #333543;
+  }
+  &:after {
+    background: #77a0cb;
+  }
+}

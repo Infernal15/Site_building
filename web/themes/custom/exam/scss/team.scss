@@ -1,0 +1,42 @@
+@import "variables";
+@import "extends";
+
+#block-views-block-our-team-block-1 {
+  .block-title {
+    @extend %block-title;
+  }
+  .view-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+
+    .views-row {
+      max-height: 496px;
+      height: 496px;
+      background: white;
+      .field--name-body {
+        text-transform: uppercase;
+        color: $gray;
+        margin-bottom: 20px;
+      }
+      .field--name-node-link {
+        @extend %field-link;
+        margin-bottom: 20px;
+      }
+      .social_like {
+        display: flex;
+        width: 192px;
+        align-items: center;
+        justify-content: space-between;
+        .social-media-links--platforms {
+          margin-bottom: 0;
+        }
+        .likebtn_container {
+          .lb-like-icon {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

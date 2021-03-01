@@ -1,0 +1,27 @@
+@import "variables";
+@import "extends";
+
+footer.footer {
+  margin: 45px 0 0 0;
+  max-width: 100%;
+  width: 100%;
+  background-color: $dark-blue;
+  .region-footer {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .site-branding-group{
+      @extend %site-branding-group;
+      .navbar-text {
+        font-size: 13px;
+      }
+    }
+    #block-socialmedialinks-2 {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import "variables";
+@import "extends";
+
+.front-backend-image {
+  background: url("../images/header.png") center/cover no-repeat;
+  height: 700px;
+  padding-top: 40px;
+  .front-slogan {
+    text-transform: uppercase;
+    width: 350px;
+    height: 130px;
+    word-break: break-all;
+    word-spacing: -1px;
+    margin-top: 147px;
+    margin-left: 457px;
+    .front {
+      &-first, &-second, &-third {
+        line-height: 1.2;
+        margin-bottom: 0;
+      }
+      &-first {
+        font-size: 30px;
+        color: white;
+      }
+      &-second {
+        font-size: 25px;
+        color: $dark-blue;
+      }
+      &-third  {
+        font-size: 14px;
+        color: $blue;
+      }
+    }
+  }
+  .container {
+    padding: 0;
+  }
+}
+
+.front-bottom-line {
+  width: 1250px;
+  height: 5px;
+  display: flex;
+  margin: auto;
+  bottom: 0;
+  .front-bottom-line-content {
+    width: 5px;
+    height: 5px;
+    background-color: $dark-blue;
+  }
+  &:before {
+    content: "";
+    width: 411px;
+    height: 5px;
+    background-color: $blue;
+  }
+  &:after {
+    content: "";
+    width: 834px;
+    height: 5px;
+    background-color: $gray;
+  }
+}
+
+.dialog-off-canvas-main-canvas > #navbar.navbar-default {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.navbar-header > .region-navigation {
+  display: flex;
+  .site-branding-group {
+    @extend %site-branding-group;
+  }
+  #block-socialmedialinks {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  #block-exam-search {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    .input-group {
+      & > input {
+        border-radius: 0;
+        &::placeholder {
+          font-size: 0;
+        }
+      }
+      & > span > button {
+        border-radius: 0;
+        background-color: white;
+        border-color: $gray;
+        & > .glyphicon-search:before {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+#block-exam-main-menu {
+  .menu--main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+    li {
+      height: 100%;
+      text-transform: uppercase;
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: $dark-blue;
+      }
+      &.first {
+        display: flex;
+        align-items: center;
+        a {
+          font-size: 0;
+          background: url("../images/Homepage-menu.png") center no-repeat;
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+    .active, .first-border {
+      border-bottom: 7px solid $blue;
+      a {
+        padding-bottom: 10px;
+        background: none;
+      }
+    }
+  }
+}

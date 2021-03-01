@@ -1,0 +1,87 @@
+@import "extends";
+@import "variables";
+
+.projects-wrap-background {
+
+}
+
+#block-views-block-projects-block-1 {
+  .block-title {
+    @extend %block-title;
+  }
+  .form-group {
+    @extend %form-background;
+  }
+  .projects-wrap-background {
+    padding-top: 69px;
+  }
+  .view-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+
+    .views-row {
+      height: 442px;
+      background: white;
+      border-bottom: 1px solid $dark-blue;
+
+      .field--name-field-taxonomy > a {
+        font-size: 19px;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .field--name-field-taxonomy > a[href="/taxonomy/term/1"] {
+        color: #1bbc9b;
+      }
+
+      .field--name-field-taxonomy > a[href="/taxonomy/term/2"] {
+        color: #e84c3d;
+      }
+
+      .field--name-field-taxonomy > a[href="/taxonomy/term/3"] {
+        color: #9b58b5;
+      }
+
+      .field--name-field-taxonomy > a[href="/taxonomy/term/4"] {
+        color: #28a9e0;
+      }
+
+      .field--name-node-link {
+        @extend %field-link;
+      }
+    }
+  }
+  .pager-nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li {
+        padding: 2px 5px;
+        &.active {
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: $gray;
+          }
+        }
+        a {
+          color: black;
+          width: 30px;
+          height: 28px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    padding-bottom: 156px;
+  }
+}

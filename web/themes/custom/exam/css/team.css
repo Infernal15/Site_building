@@ -1,0 +1,65 @@
+#block-views-block-our-team-block-1 .block-title {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+#block-views-block-our-team-block-1 .block-title:before, #block-views-block-our-team-block-1 .block-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 43%;
+  text-decoration: line-through;
+  width: 43.04%;
+  height: 2px;
+  background: #ccc;
+}
+#block-views-block-our-team-block-1 .block-title:before {
+  left: 0;
+}
+#block-views-block-our-team-block-1 .block-title:after {
+  right: 0;
+}
+
+#block-views-block-our-team-block-1 .view-content .views-row .field--name-node-link a {
+  padding: 10px;
+  background: #373645;
+  color: white;
+  text-transform: uppercase;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .field--name-node-link a:hover {
+  text-decoration: none;
+}
+
+#block-views-block-our-team-block-1 .view-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 48px;
+}
+#block-views-block-our-team-block-1 .view-content .views-row {
+  max-height: 496px;
+  height: 496px;
+  background: white;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .field--name-body {
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .field--name-node-link {
+  margin-bottom: 20px;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .social_like {
+  display: flex;
+  width: 192px;
+  align-items: center;
+  justify-content: space-between;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .social_like .social-media-links--platforms {
+  margin-bottom: 0;
+}
+#block-views-block-our-team-block-1 .view-content .views-row .social_like .likebtn_container .lb-like-icon {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=team.css.map */
